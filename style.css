@@ -1,11 +1,21 @@
 /*CORES*/
 :root{
-    --laranja: #B86C3E;
-    --verde: #58B848;
-    --vermelho: #B84035;
-    --azul: #23B6B8;
-    --rosa: #B82C90;
+    --laranja: #EB9023;
+    --verde: #23EB4D;
+    --roxo: #664896;
+    --azul: #6F23EB;
+    --verde-escuro: #3F6B48;
 }   
+
+/*FONTES*/
+@font-face{
+    font-family: 'Nexa';
+    src: url('./nexa/Nexa-ExtraLight.ttf');
+}
+@font-face{
+    font-family: 'Toony-Sans';
+    src: url('./toony_sans/ToonySans_PERSONAL_USE_ONLY.otf');
+}
 
 
 .parallax1{ 
