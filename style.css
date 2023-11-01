@@ -6,3 +6,60 @@
     --azul: #23B6B8;
     --rosa: #B82C90;
 }   
+
+
+.parallax1{ 
+
+    padding:8em 0em; 
+    height:auto; 
+    background-color: var(--laranja);
+    background-position:center top; 
+    background-repeat:no-repeat; 
+    background-size:cover; 
+    background-attachment:fixed; 
+    color:#fff; 
+    text-align:center; 
+    position:relative; 
+
+}
+
+.paralax2{ 
+
+    padding:8em 0em; 
+    height:auto; 
+    background-color: var(--azul); 
+    background-position:center top; 
+    background-repeat:no-repeat; 
+    background-size:cover; 
+    background-attachment:fixed; 
+    color:#fff; 
+    text-align:center; 
+    position:relative; 
+
+}
+.paralax3{ 
+
+    padding:8em 0em; 
+    height:auto; 
+    background-color: var(--verde);
+    background-position:center top; 
+    background-repeat:no-repeat; 
+    background-size:cover; 
+    background-attachment:fixed; 
+    color:#fff; 
+    text-align:center; 
+    position:relative; 
+}
+.texto  { 
+
+    width: 100%; 
+    float:left; 
+    margin-bottom:1em; 
+    font-size:1em;
+    font-family: 'Arial'; 
+    color:#fff;
+    font-weight: 300; 
+    text-align: center; 
+    margin-bottom: 6em; 
+
+}
