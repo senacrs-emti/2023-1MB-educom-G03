@@ -25,10 +25,14 @@ body {
 
 h1{
     font-family: 'Toony-Sans';
+    color: black;
+    font-size: 36px;
+
 }
 
 p{
     font-family: 'Nexa';
+    color: black;
 }
 
     .parallax-container {
@@ -52,15 +56,15 @@ p{
       color: #fff;
       font-size: 24px;
       transition: transform 0.5s ease;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
     }
 
-    .parallax-slide h1 {
-      margin-bottom: 20px;
-      font-size: 36px;
-    }
-
+    #parallax-slide{
+    max-width:600px;
+}
     .parallax-slide:nth-child(1) {
-      background-image: url'()';
+      background-image: url'(https://s5.static.brasilescola.uol.com.br/be/2022/06/fome.jpg)';
     }
 
     .parallax-slide:nth-child(2) {
@@ -107,9 +111,9 @@ p{
       background-color: var(verde);
     }
     .parallax-container:hover .parallax-slide:nth-child(1) {
-      transform: translateY(10%);
+      transform: translateY(5%);
     }
 
     .parallax-container:hover .parallax-slide:nth-child(2) {
-      transform: translateY(20%);
+      transform: translateY(10%);
     }
