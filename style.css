@@ -18,58 +18,91 @@
 }
 
 
-.parallax1{ 
+body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
 
-    padding:8em 0em; 
-    height:auto; 
-    background: url(https://vejario.abril.com.br/wp-content/uploads/2023/01/fome-1-1024x676-1.jpg?quality=70&strip=info&w=1024&resize=1200,800);
-    background-position:center top; 
-    background-repeat:no-repeat; 
-    background-size:cover; 
-    background-attachment:fixed; 
-    color:#fff; 
-    text-align:center; 
-    position:relative; 
+    .parallax-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
 
-}
+    .parallax-slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      transition: transform 0.5s ease;
+    }
 
-.paralax2{ 
+    .parallax-slide h1 {
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
 
-    padding:8em 0em; 
-    height:auto; 
-    background-color: var(--azul); 
-    background-position:center top; 
-    background-repeat:no-repeat; 
-    background-size:cover; 
-    background-attachment:fixed; 
-    color:#fff; 
-    text-align:center; 
-    position:relative; 
+    .parallax-slide:nth-child(1) {
+      background-image: url'()';
+    }
 
-}
-.paralax3{ 
+    .parallax-slide:nth-child(2) {
+      background-color: var(verde);
+    }
 
-    padding:8em 0em; 
-    height:auto; 
-    background-color: var(--verde);
-    background-position:center top; 
-    background-repeat:no-repeat; 
-    background-size:cover; 
-    background-attachment:fixed; 
-    color:#fff; 
-    text-align:center; 
-    position:relative; 
-}
-.texto  { 
+    .parallax-slide:nth-child(3) {
+      background-color: var(laranja);
+    }
 
-    width: 100%; 
-    float:left; 
-    margin-bottom:1em; 
-    font-size:1em;
-    font-family: 'Arial'; 
-    color:#fff;
-    font-weight: 300; 
-    text-align: center; 
-    margin-bottom: 6em; 
+    .parallax-slide:nth-child(4) {
+      background-color: var(roxo);
+    }
 
-}
+    .parallax-slide:nth-child(5) {
+      background-color: var(azul);
+    }
+
+    .parallax-slide:nth-child(6) {
+      background-color: var(verde-escuro);
+    }
+
+    .parallax-slide:nth-child(7) {
+      background-color: var(verde);
+    }
+
+    .parallax-slide:nth-child(8) {
+      background-color: var(laranja);
+    }
+
+    .parallax-slide:nth-child(9) {
+      background-color: var(roxo);
+    }
+
+    .parallax-slide:nth-child(10) {
+      background-color: var(azul);
+    }
+
+    .parallax-slide:nth-child(11) {
+      background-color: var(verde-escuro);
+    }
+
+     .parallax-slide:nth-child(12) {
+      background-color: var(verde);
+    }
+    .parallax-container:hover .parallax-slide:nth-child(1) {
+      transform: translateX(-10%);
+    }
+
+    .parallax-container:hover .parallax-slide:nth-child(2) {
+      transform: translateX(-20%);
+    }
