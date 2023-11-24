@@ -5,6 +5,7 @@
     --roxo: #664896;
     --azul: #6F23EB;
     --verde-escuro: #3F6B48;
+    --fonte: #FFFFFF;
 }   
 
 /*FONTES*/
@@ -21,97 +22,90 @@
 body {
       margin: 0;
       padding: 0;
+      background-image: url('background.png');
+      color: var(--fonte);
     }
-
-h1{
-    font-family: 'Toony-Sans';
-    color: black;
-    font-size: 36px;
-
-}
-
-p{
-    font-family: 'Nexa';
-    color: black;
-}
 
     .parallax-container {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    .parallax-slide {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
       display: flex;
+      min-height: 100vh;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      color: #fff;
-      font-size: 24px;
-      transition: transform 0.5s ease;
       background-attachment: fixed;
-      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      color: var(--color);
+      row-gap: 4rem;
+      text-align: center;
     }
-
     
-    .parallax-slide:nth-child(1) {
-      background-image: url'(https://s5.static.brasilescola.uol.com.br/be/2022/06/fome.jpg)';
+    .buffer {
+      width: 100%;
+      min-height: 10vh;
+      background-image: url('background.png');
+    }
+    
+    .parallax-container2 {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 6rem 0;
+      gap: 1.6em;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    
+    p {
+      max-width: 52ch;
+      padding: 1em;
+      line-height: 1.5;
+    }
+    
+    .parallax-slide {
+      display: flex;
+      max-width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #slide1 h1{
+      font-family: 'Toony-Sans';
+      color: var(--fonte);
+      font-size: 65px;
+      letter-spacing: 7px;
+      -webkit-text-stroke: 1px #0000;
+      padding-top: 60px;
+    }
+    #slide1 p{
+        font-family: 'Nexa';
+        font-size: 40px;
+        color: var(--fonte);
+    }
+  
+    #slide1 img{
+      width: 50px;
+      height: 50px;
+      align-items: center;
     }
 
-    .parallax-slide:nth-child(2) {
+    #slide2{
+      z-index: 2;
       background-color: var(verde);
+      padding: 10px;
+    }
+  
+    .card h1{
+       font-size: 40px;
+       font-family: 'Nexa';
+       padding-top: 20px;
     }
 
-    .parallax-slide:nth-child(3) {
-      background-color: var(laranja);
-    }
-
-    .parallax-slide:nth-child(4) {
-      background-color: var(roxo);
-    }
-
-    .parallax-slide:nth-child(5) {
-      background-color: var(azul);
-    }
-
-    .parallax-slide:nth-child(6) {
-      background-color: var(verde-escuro);
-    }
-
-    .parallax-slide:nth-child(7) {
-      background-color: var(verde);
-    }
-
-    .parallax-slide:nth-child(8) {
-      background-color: var(laranja);
-    }
-
-    .parallax-slide:nth-child(9) {
-      background-color: var(roxo);
-    }
-
-    .parallax-slide:nth-child(10) {
-      background-color: var(azul);
-    }
-
-    .parallax-slide:nth-child(11) {
-      background-color: var(verde-escuro);
-    }
-
-     .parallax-slide:nth-child(12) {
-      background-color: var(verde);
-    }
-    .parallax-container:hover .parallax-slide:nth-child(1) {
-      transform: translateY(5%);
-    }
-
-    .parallax-container:hover .parallax-slide:nth-child(2) {
-      transform: translateY(10%);
+    .card p{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-stretch: normal;
+      font-size: 35px;
+      padding: 5px;
     }
