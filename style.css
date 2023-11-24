@@ -21,8 +21,15 @@
 body {
       margin: 0;
       padding: 0;
-      font-family: 'Arial', sans-serif;
     }
+
+h1{
+    font-family: 'Toony-Sans';
+}
+
+p{
+    font-family: 'Nexa';
+}
 
     .parallax-container {
       position: relative;
@@ -100,9 +107,9 @@ body {
       background-color: var(verde);
     }
     .parallax-container:hover .parallax-slide:nth-child(1) {
-      transform: translateX(-10%);
+      transform: translateY(10%);
     }
 
     .parallax-container:hover .parallax-slide:nth-child(2) {
-      transform: translateX(-20%);
+      transform: translateY(20%);
     }
