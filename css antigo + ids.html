@@ -1,0 +1,69 @@
+ <div class="parallax-container" id="parallax-container">
+  <!-- abertura -->
+    <div class="parallax-slide" id="slide1">
+      <h1>A Fome e a Miséria no Brasil</h1>
+      <p>Observe ao longo dos anos!</p>
+      <img src="https://www.fadisma.com.br/wp-content/uploads/2021/02/setas-branca.png">
+    </div>
+  <!-- slide 2-->
+  <div class="parallax-slide" id="slide2">
+    <h1>1970</h1>
+    <p>Na década de 70, pela primeira vez, líderes mundiais se reuniram para discutir a Fome no Mundo e propor caminhos para sua superação. Nesta Primeira Conferência Mundial sobre Alimentação, convocada pela FAO em 1974, foi proclamado que "todo homem, mulher e criança tem 9 o direito inalienável de estar livre da fome e da desnutrição para desenvolver suas faculdades físicas e mentais". Entre as metas estabelecidas pela conferência figuravam erradicar a fome, alcançar a segurança alimentar e reduzir a desnutrição "em uma década". Porém, esses objetivos nunca foram atingidos.</p>
+  </div>
+
+  </div>
+  
+
+  .parallax-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    transition: transform 0.5s ease;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+  }
+  .parallax-slide::before{
+    content: " ";  
+    position: absolute;  
+    top: 0;  
+    right: 0;  
+    bottom: 0;
+    left: 0;     
+    z-index: -1;       
+    background-size: cover;  
+    background-repeat: no-repeat;  
+    background-position: center center; 
+    transform: translateY(-1px) scale (1.5); 
+    } 
+  #slide2{
+    z-index: 2;
+    display: none;
+  }
+  #slide1 h1{
+    font-family: 'Toony-Sans';
+    color: var(--fonte);
+    font-size: 60px;
+    letter-spacing: 7px;
+    -webkit-text-stroke: 1px #0000;
+  }
+  #slide1 p{
+      font-family: 'Nexa';
+      font-size: 40px;
+      color: var(--fonte);
+  }
+
+  #slide1 img{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+  }
