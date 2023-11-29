@@ -1,111 +1,99 @@
 /*CORES*/
-:root{
-    --laranja: #EB9023;
-    --verde: #23EB4D;
-    --roxo: #664896;
-    --azul: #6F23EB;
-    --verde-escuro: #3F6B48;
-    --fonte: #FFFFFF;
-}   
+:root {
+  --laranja: #EB9023;
+  --verde: #23EB4D;
+  --roxo: #664896;
+  --azul: #6F23EB;
+  --verde-escuro: #3F6B48;
+  --fonte: #FFFFFF;
+}
 
 /*FONTES*/
-@font-face{
-    font-family: 'Nexa';
-    src: url('./nexa/Nexa-ExtraLight.ttf');
-}
-@font-face{
-    font-family: 'Toony-Sans';
-    src: url('./toony_sans/ToonySans_PERSONAL_USE_ONLY.otf');
+@font-face {
+  font-family: 'Nexa';
+  src: url('./nexa/Nexa-ExtraLight.ttf');
 }
 
+@font-face {
+  font-family: 'Akira';
+  src: url('./akira_expanded/Akira\ Expanded\ Demo.otf');
+}
 
 body {
-      margin: 0;
-      padding: 0;
-      background-image: url('background.png');
-      color: var(--fonte);
-    }
+  margin: 0;
+  background-color: var(--laranja);
+}
 
-    .parallax-container {
-      display: flex;
-      min-height: 100vh;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-attachment: fixed;
-      background-position: center;
-      background-size: cover;
-      color: var(--color);
-      row-gap: 4rem;
-      text-align: center;
-    }
-    
-    .buffer {
-      width: 100%;
-      min-height: 10vh;
-      background-image: url('background.png');
-    }
-    
-    .parallax-container2 {
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding: 6rem 0;
-      gap: 1.6em;
-    }
-    
-    h1 {
-      font-size: 3rem;
-      font-weight: 700;
-    }
-    
-    p {
-      max-width: 52ch;
-      padding: 1em;
-      line-height: 1.5;
-    }
-    
-    .parallax-slide {
-      display: flex;
-      max-width: 100%;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    #slide1 h1{
-      font-family: 'Toony-Sans';
-      color: var(--fonte);
-      font-size: 65px;
-      letter-spacing: 7px;
-      -webkit-text-stroke: 1px #0000;
-      padding-top: 60px;
-    }
-    #slide1 p{
-        font-family: 'Nexa';
-        font-size: 40px;
-        color: var(--fonte);
-    }
-  
-    #slide1 img{
-      width: 50px;
-      height: 50px;
-      align-items: center;
-    }
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
 
-    #slide2{
-      z-index: 2;
-      background-color: var(verde);
-      padding: 10px;
-    }
-  
-    .card h1{
-       font-size: 40px;
-       font-family: 'Nexa';
-       padding-top: 20px;
-    }
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
 
-    .card p{
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-stretch: normal;
-      font-size: 35px;
-      padding: 5px;
-    }
+.background {
+  transform: translateZ(-10px) scale(2);
+}
+
+.foreground {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.background,
+.foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.title {
+  font-size: 60px;
+  color: white;
+  align-items: center;
+  font-family: 'Akira';
+  margin: 100px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: white;
+  align-items: center;
+  font-family: 'Nexa';
+}
+
+#seta {
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  margin-right: 50px;
+}
+
+div.parallax-slide {
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: var(--roxo);
+  color: white;
+}
+
+div.parallax-slide h1 {
+  font-family: 'Akira';
+  font-size: 40px;
+  align-items: center;
+}
+
+div.parallax-slide p {
+  font-family: 'Nexa';
+  font-size: 25px;
+}
